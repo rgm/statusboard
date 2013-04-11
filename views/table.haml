@@ -1,7 +1,7 @@
 %table
   %tr
     %td row1
-    %td= Time.now + 600
+    %td= (Time.now + 600).strftime("%H:%M")
     %td icons
     %td.projectBars
       .barSegment.value1
@@ -14,7 +14,7 @@
       .barSegment.value8
   %tr
     %td row2
-    %td= Time.now + 1200
+    %td= (Time.now + 1200).strftime("%H:%M")
     %td icons
     %td.projectBars
       .barSegment.value1
@@ -22,7 +22,7 @@
       .barSegment.value3
   %tr
     %td row3
-    %td= Time.now + 1800
+    %td= (Time.now + 1800).strftime("%H:%M")
     %td icons
     %td.projectBars
       .barSegment.value1
