@@ -1,3 +1,4 @@
+require 'haml'
 require 'json'
 require 'rack/ssl'
 require 'sinatra'
@@ -11,7 +12,7 @@ class Statusboard <  Sinatra::Base
   end
 
   get '/table/' do
-    erb :table
+    haml :table
   end
 
   get '/diy/' do
